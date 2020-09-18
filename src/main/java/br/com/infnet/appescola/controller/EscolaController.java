@@ -26,12 +26,12 @@ public class EscolaController {
 		return service.obterLista();
 	}
 	
-	@PostMapping(value = "/{nome}")
-	public void incluir(
-				@PathVariable String nome
-			) {
-		this.incluir(new Escola(nome));
-	}
+//	@PostMapping(value = "/{nome}")
+//	public void incluir(
+//				@PathVariable String nome
+//			) {
+//		this.incluir(new Escola(nome));
+//	}
 	
 	@PostMapping
 	public void incluir(

@@ -1,7 +1,6 @@
 package br.com.infnet.appescola.testes;
 
 import br.com.infnet.appescola.controller.EscolaController;
-import br.com.infnet.appescola.model.negocio.Escola;
 
 public class EscolaTeste {
 
@@ -11,15 +10,15 @@ public class EscolaTeste {
 		
 		System.out.println(controle.obterLista());
 		
-		controle.incluir("infnet");
+//		controle.incluir("infnet");
 		
 //		System.out.println(controle.obterPorId(1));
 		
-		controle.incluir(new Escola("Instituto Infnet"));
+//		controle.incluir(new Escola("Instituto Infnet"));
 
 //		controle.excluir(2);
 		
-		controle.incluir(new Escola("Instituto"));
+//		controle.incluir(new Escola("Instituto"));
 		
 		System.out.println(controle.obterLista());
 	}
