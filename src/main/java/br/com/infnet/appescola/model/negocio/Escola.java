@@ -11,6 +11,8 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "TEscola")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -27,6 +29,7 @@ public abstract class Escola {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	@ApiModelProperty(value = "O nome da escola")
 	private String nome;
 
 	public Escola() {
